@@ -1,0 +1,167 @@
+.Home-deader
+  display: grid
+  gap: 25px
+
+  .switch
+    position: relative
+    display: inline-block
+    width: 55px
+    height: 26px
+    border-radius: 20px
+
+
+  .switch input
+    opacity: 0
+    width: 0
+    height: 0
+    border-radius: 4px
+
+  .slider
+    position: absolute
+    cursor: pointer
+    top: 0
+    left: 0
+    right: 2px
+    bottom: 0
+    background-color: #53627B
+    transition: 0.4s
+    border-radius: 20px
+
+
+  .slider:before
+    position: absolute
+    content: ""
+    height: 23px
+    width: 23px
+    left: 2px
+    bottom: 1.5px
+    background-color: white
+    transition: 0.4s
+    border-radius: 50%
+
+
+  .slider.checked
+    background-color: gray
+
+
+  .slider.checked:before
+    transform: translateX(26px)
+
+
+  //--------------------------------
+
+  .home-header
+    display: flex
+    justify-content: space-between
+    border: 1px solid #D2E7E4
+    align-items: center
+    border-radius: 15px
+    padding: 0 9px
+    height: 54px
+
+    .header-days
+      display: flex
+      align-items: center
+      font-size: 14px
+      gap: 15px
+
+      .month-picker
+        display: flex
+        border-radius: 8px
+        overflow: hidden
+        background-color: #F1F4F8
+
+        button
+          padding: 10px 16px
+
+        button:first-child
+          border-top-left-radius: 8px
+          border-bottom-left-radius: 8px
+          border-right: 1px solid #afafaf
+
+        button:last-child
+          border-top-right-radius: 8px
+          border-bottom-right-radius: 8px
+
+
+      .day-picker
+        display: flex
+        border-radius: 8px
+        background-color: #F1F4F8
+        align-items: center
+        overflow: hidden
+        height: 36px
+        font-size: 13px
+
+        .header-days_left
+          border-right: 1px solid #7883983D
+          display: flex
+          width: 32px
+          justify-content: center
+
+        .header-days_right
+          border-left: 1px solid #7883983D
+          display: flex
+          width: 32px
+          justify-content: center
+
+        span
+          padding: 10px 16px
+
+  .header-profile
+    display: flex
+    gap: 27px
+    align-items: center
+
+    .switch
+      display: grid
+      align-items: center
+
+  //-----------------
+  //.Shedule-home
+  //
+  //
+  //
+  //  .shedule-item
+  //    display: grid
+  //    grid-template-columns: repeat(2, 1fr)
+  //
+  //    div
+  //      .shedule-minutes
+  //        border-bottom: 1px solid #7883983D
+  //
+  //    .shedule-minutes_inner
+  //      display: grid
+  //      font-size: 7px
+  //      color: #D4D8DF
+
+  .Shedule-home
+
+    table
+      width: 100%
+
+      tbody
+
+        tr
+          display: grid
+
+
+          td
+            height: 18px
+
+          .table-date_inner
+            display: grid
+
+            .table-date
+              font-size: 9px
+              align-items: center
+              display: flex
+              justify-content: space-between
+
+          .table-minutes
+            font-size: 7px
+            align-items: center
+            display: flex
+            color: #D4D8DF
+            justify-content: space-between
+

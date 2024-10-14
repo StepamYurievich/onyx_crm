@@ -1,0 +1,27 @@
+@import "navbaritems"
+@import "accordion"
+@import "calendar"
+
+.header-active
+  width: 273px
+  padding: 17px 14px
+  border: 1px #D2E7E4 solid
+  border-radius: 17px
+  color: #53627B
+  font-size: 14px
+  overflow-x: hidden
+
+.menu
+  transform: translateY(-100%)
+  left: 0
+  .header_ul
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+@media (max-width: 1024px)
+  .header-active
+    width: 250px
+
+
+
